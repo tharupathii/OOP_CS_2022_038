@@ -6,6 +6,7 @@ public class Q_01 {
             System.out.print(i+" ");
             if(i%10 == 9){
                 System.out.println("");
+
             }
         }
     }
