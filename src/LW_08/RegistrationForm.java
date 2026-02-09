@@ -218,6 +218,8 @@ class RegistrationForm extends JFrame implements ActionListener {
                     date.setSelectedIndex(0);
                     month.setSelectedIndex(0);
                     year.setSelectedIndex(0);
+                    passwordText.setText("");
+                    checkBox.setSelected(false);
                 }catch (SQLException ex){
                     throw new RuntimeException(ex);
                 }
