@@ -6,3 +6,4 @@ public class Main {
         form.setVisible(true);
     }
 }
+
