@@ -211,6 +211,13 @@ class RegistrationForm extends JFrame implements ActionListener {
                 String passwordq = passwordText.getText();
                 try{
                     dbConnector.addData(nameq,emailq,genderq,dobq,passwordq);
+                    nameText.setText("");
+                    emailText.setText("");
+                    male.setSelected(false);
+                    female.setSelected(false);
+                    date.setSelectedIndex(0);
+                    month.setSelectedIndex(0);
+                    year.setSelectedIndex(0);
                 }catch (SQLException ex){
                     throw new RuntimeException(ex);
                 }
